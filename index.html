@@ -16,17 +16,21 @@
     <link rel="stylesheet" href="./asset/style/public.css" />
   </head>
   <body data-dark="true">
-    <md-typo hd-md>ME</md-typo>
-    <md-avatar url="./asset/img/dog.gif" full-img large></md-avatar>
-    <md-typo bd-lg>Hi there (｡･∀･)ﾉﾞ, I'm HugePancake (huge-pancake)</md-typo>
+    <div class="me-container">
+      <div class="avatar-box">
+        <md-avatar url="./asset/img/dog.gif" full-img large></md-avatar>
+        <md-ripple unbounded centered></md-ripple>
+        <a href="https://github.com/huge-pancake" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <md-typo bd-lg>Hi there (｡･∀･)ﾉﾞ, I'm HugePancake (huge-pancake)</md-typo>
+    </div>
     <div class="hio-divider"></div>
-    <md-typo hd-md>MY PROJECT</md-typo>
-    <div>
+    <div class="project-container">
       <div class="hio-card">
-        <md-typo tt-lg>Material Web UDP</md-typo>
-        <a href="https://github.com/huge-pancake/material-web-udp" target="_blank" rel="noopener noreferrer">Source in Github</a>
         <md-ripple></md-ripple>
-        <a href="https://huge-pancake.github.io/material-web-udp/demos/" target="_blank" rel="noopener noreferrer">Demo in Github</a>
+        <md-typo tt-lg>Material Web UDP</md-typo>
+        <a class="mio-link" href="https://github.com/huge-pancake/material-web-udp" target="_blank" rel="noopener noreferrer">Source in Github</a>
+        <a class="mio-link" href="https://huge-pancake.github.io/material-web-udp/demos/" target="_blank" rel="noopener noreferrer">Demo in Github</a>
       </div>
     </div>
   </body>

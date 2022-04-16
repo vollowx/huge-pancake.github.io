@@ -4,15 +4,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-a {
+.me-container,
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mio-link {
   padding: 2px 4px;
   text-decoration: none;
   color: rgb(var(--md-c-primary-rgb));
   background-color: rgba(var(--md-c-surface-variant-rgb), 0.24);
   border-radius: 4px;
 }
-a:hover,
-a:focus-visible {
+.mio-link:hover,
+.mio-link:focus-visible {
   background-color: rgba(var(--md-c-surface-variant-rgb), 0.36);
 }
 .hio-card {
@@ -27,9 +34,47 @@ a:focus-visible {
   margin-bottom: 16px;
 }
 .hio-divider {
+  flex-shrink: 0;
   margin: 8px 40px;
-  width: 100%;
-  max-width: 800px;
+  width: 64px;
   height: 1px;
-  background-color: rgba(var(--md-c-on-surface-rgb), 0.12);
+  background-color: rgb(var(--md-c-outline-rgb));
+}
+.hio-divider[v] {
+  margin: 40px 8px;
+  height: 64px;
+  width: 1px;
+}
+.avatar-box {
+  margin: 8px;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.avatar-box > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.avatar-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 240ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+@media screen and (min-width: 1240px) {
+  .avatar-box:hover::after {
+    opacity: 0.12;
+  }
 }
