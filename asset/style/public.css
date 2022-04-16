@@ -11,15 +11,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-.mio-link {
+.hio-link {
   padding: 2px 4px;
   text-decoration: none;
   color: rgb(var(--md-c-primary-rgb));
   background-color: rgba(var(--md-c-surface-variant-rgb), 0.24);
   border-radius: 4px;
 }
-.mio-link:hover,
-.mio-link:focus-visible {
+.hio-link:hover,
+.hio-link:focus-visible {
   background-color: rgba(var(--md-c-surface-variant-rgb), 0.36);
 }
 .hio-card {
