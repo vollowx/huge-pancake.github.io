@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  padding: 2px 4px;
+  text-decoration: none;
+  color: rgb(var(--md-c-primary-rgb));
+  background-color: rgba(var(--md-c-surface-variant-rgb), 0.24);
+  border-radius: 4px;
+}
+a:hover,
+a:focus-visible {
+  background-color: rgba(var(--md-c-surface-variant-rgb), 0.36);
+}
+.hio-card {
+  position: relative;
+  padding: 24px 16px;
+  background: var(--md-e-surface-2);
+  box-shadow: var(--md-e-shadow-2);
+  border-radius: 16px;
+  user-select: none;
+}
+.hio-card > md-typo {
+  margin-bottom: 16px;
+}
+.hio-divider {
+  margin: 8px 40px;
+  width: 100%;
+  max-width: 800px;
+  height: 1px;
+  background-color: rgba(var(--md-c-on-surface-rgb), 0.12);
+}
