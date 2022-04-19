@@ -14,19 +14,19 @@ body {
 .hio-link {
   padding: 2px 4px;
   text-decoration: none;
-  color: rgb(var(--md-c-primary-rgb));
-  background-color: rgba(var(--md-c-surface-variant-rgb), 0.24);
+  color: rgb(var(--md3-c-primary-rgb));
+  background-color: rgba(var(--md3-c-surface-variant-rgb), 0.24);
   border-radius: 4px;
 }
 .hio-link:hover,
 .hio-link:focus-visible {
-  background-color: rgba(var(--md-c-surface-variant-rgb), 0.36);
+  background-color: rgba(var(--md3-c-surface-variant-rgb), 0.36);
 }
 .hio-card {
   position: relative;
   padding: 24px 16px;
-  background: var(--md-e-surface-2);
-  box-shadow: var(--md-e-shadow-2);
+  background: var(--md3-e-surface-2);
+  box-shadow: var(--md3-e-shadow-2);
   border-radius: 16px;
   user-select: none;
 }
@@ -38,7 +38,7 @@ body {
   margin: 8px 40px;
   width: 64px;
   height: 1px;
-  background-color: rgb(var(--md-c-outline-rgb));
+  background-color: rgb(var(--md3-c-outline-rgb));
 }
 .hio-divider[v] {
   margin: 40px 8px;
