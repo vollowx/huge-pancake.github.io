@@ -4,12 +4,21 @@ body {
   justify-content: center;
   align-items: center;
 }
-.me-container,
-.project-container {
+.me-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+a[with-btn] {
+  text-decoration: none;
 }
 .hio-link {
   padding: 2px 4px;
